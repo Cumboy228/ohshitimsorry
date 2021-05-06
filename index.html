@@ -6,24 +6,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap" rel="stylesheet">
     <title>LGBTQ+ police</title>
     <style>
-        *{
-            font-family: "Gayathri",sans-serif;
+        * {
+            text-align: center;
+            font-family: "Gayathri", sans-serif;
         }
-        body::after{
+
+        span::after {
             content: "GAY";
             top: 50%;
             left: 50%;
-            transform: translate(50%,50%);
+            transform: translate(-50%, -50%);
             position: absolute;
-            color: aqua;
+            color: rgb(0, 255, 42);
             font-size: 10vw;
-            opacity: 0.5;
         }
-        body{
+        img{
+            width: 600px;
+            height: 600px;
+            border-radius: 20px;
+        }
+        body {
             color: blue;
-            background-image: url(./pEdik.png);
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/LGBT_flag_square.svg/2048px-LGBT_flag_square.svg.png);
+            background-size: contain;
+        }
+
+        div {
+            display: inline-block;
+            background-color: pink;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+        }
+
+        @media (max-width:500px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+            img{
+            width: 300px;
+            height: 300px;
+        }
+            span::after {
+                content: "EDYARDO GAY";
+            }
+        }
+        h1{
+            background-color:#000;
+            color: #fff;
+            border-radius: 10px;
+        }
+        span {
+            position: relative;
+            -webkit-box-shadow: 0px 0px 100px 41px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 0px 0px 100px 41px rgba(34, 60, 80, 0.2);
+            box-shadow: 0px 0px 100px 41px rgba(34, 60, 80, 0.2);
         }
     </style>
 </head>
@@ -32,27 +72,31 @@
     <p>
     <h1>Увага розшук!</h1>
     </p>
-    <img src="pEdik.png" width=500 height=350>
-    <div>
-        <p><a>Дана особа звинувачується в пасивному й активному розбещенні неповнолітніх хлопчиків.
-                <p>
-                    Наразі особовий склад відділу поліції орієнтовано на пошуки небезпечного злочинця.
-                </p>
-                Правоохоронці опитують місцевих мешканців, встановлюють свідків, орієнтування з прикметами
-                <p>правопорушника розповсюджені на блок-постах, авто та залізничних вокзалах,</p>
-                <p>
-                    у місцях масового скупчення людей.
-                </p>
-                Правоохоронці звертаються до всіх хто має будь-яку інформацію про місце знаходження розшукуваного
-                чоловіка
-            </a>
-        <p>
-            <a>звертатися на лінію</a>
-            <font color="red"><b>102</b></font> або за телефоном <font color="red"><b>068-460-0218</b></font>
-        </p>
-        <h2>Знайти і зґвалтувати!</h2>
-        </p>
-    </div>
+    <section>
+        <span>
+            <img src="pEdik.png">
+        </span>
+        <div>
+            <p><a>Дана особа звинувачується в пасивному й активному розбещенні неповнолітніх хлопчиків.
+                    <p>
+                        Наразі особовий склад відділу поліції орієнтовано на пошуки небезпечного злочинця.
+                    </p>
+                    Правоохоронці опитують місцевих мешканців, встановлюють свідків, орієнтування з прикметами
+                    <p>правопорушника розповсюджені на блок-постах, авто та залізничних вокзалах,</p>
+                    <p>
+                        у місцях масового скупчення людей.
+                    </p>
+                    Правоохоронці звертаються до всіх хто має будь-яку інформацію про місце знаходження розшукуваного
+                    чоловіка
+                </a>
+            <p>
+                <a>звертатися на лінію</a>
+                <font color="red"><b>102</b></font> або за телефоном <font color="red"><b>068-460-0218</b></font>
+            </p>
+            <h2>Знайти і зґвалтувати!</h2>
+            </p>
+        </div>
+    </section>
 
 
 </body>
